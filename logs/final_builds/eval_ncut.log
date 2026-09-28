@@ -1,0 +1,11 @@
+   L236 base                                Score  70.1529 | Pitch  70.0469 | Player  70.4003 (τ +0.4080)
+   ncut800                                  Score  70.2445 | Pitch  70.0734 | Player  70.6437 (τ +0.4129)
+     Δ Pitch +0.0265 Player +0.2434
+   ncut1000                                 Score  70.2646 | Pitch  70.0704 | Player  70.7177 (τ +0.4144)
+     Δ Pitch +0.0236 Player +0.3174
+   ncut1500                                 Score  70.2199 | Pitch  70.0642 | Player  70.5833 (τ +0.4117)
+     Δ Pitch +0.0173 Player +0.1830
+   ncut2000                                 Score  70.1878 | Pitch  70.0608 | Player  70.4840 (τ +0.4097)
+     Δ Pitch +0.0139 Player +0.0837
+   ncut2500                                 Score  70.1796 | Pitch  70.0575 | Player  70.4646 (τ +0.4093)
+     Δ Pitch +0.0106 Player +0.0643

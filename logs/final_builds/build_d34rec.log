@@ -1,0 +1,6 @@
+d34rec[rec]: 셀 10834 · 원 sd 0.3420 → 재스케일 0.42 · 원표(TS) 와 상관 +0.6235 · 평균|Δ| 0.211
+[게이트] 행 독립 최대차 8.327e-17 · 확률합 2.22e-16 · 최소 6.43e-02  ✓
+   TS_P600G10 (2024 인샘플)                    Score  69.3529 | Pitch  70.0405 | Player  67.7484 (τ +0.3550)
+   d34rec                                   Score  69.3701 | Pitch  70.0509 | Player  67.7815 (τ +0.3556)
+  Δ Pitch +0.0104 Player +0.0331 · 투수 mean t 상관 +0.9989 · 순위이동 3.3/321
+  zip → /home/ubuntu/workspace/산출물/dain/out/submit_d34rec.zip 7.9MB

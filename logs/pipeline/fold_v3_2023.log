@@ -1,0 +1,10 @@
+mode val seeds [0] drop ('b_',) params lr=0.02 minleaf=1000 leaves=63
+[    5s] loaded (1474868, 46), tm (1760612, 14)
+평가 시즌 2023 · 학습 시즌 [2020, 2021, 2022]
+[   13s] Xtr (623747, 69) Xev (212602, 69)
+  [   43s] seed 0 it=395                         Brier 0.6038  Pitch 69.812  τ +0.0656  Player  53.28  ★Total 64.852
+   gain% top15: {'balls_before': 9.4, 'strikes_before': 8.8, 'pgt_rev': 5.2, 'base_state': 3.5, 'li': 3.3, 'pgt_fa': 3.2, 'game_type': 2.8, 'home_win_expectancy': 2.1, 'p_h_sd': 2.0, 'game_month': 1.9, 'p_h_mean': 1.6, 'tm_extension': 1.5, 'score_diff_pitcher_team': 1.5, 'tm_mix_offspeed': 1.5, 'season': 1.5}
+  ★ 앙상블 1 seeds                                  Brier 0.6038  Pitch 69.812  τ +0.0656  Player  53.28  ★Total 64.852
+    신인 46명 τ -0.1208
+    비신인 257명 τ +0.0973
+[   43s] val done. best_iters [395]

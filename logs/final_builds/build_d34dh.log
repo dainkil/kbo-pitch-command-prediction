@@ -1,0 +1,6 @@
+d34dh[dirhier]: 셀 16948 · 원 sd 0.6583 → 재스케일 0.42 · 원표(TS) 와 상관 +0.8666 · 평균|Δ| 0.154
+[게이트] 행 독립 최대차 1.110e-16 · 확률합 2.22e-16 · 최소 6.43e-02  ✓
+   TS_P600G10 (2024 인샘플)                    Score  69.3529 | Pitch  70.0405 | Player  67.7484 (τ +0.3550)
+   d34dh                                    Score  69.3442 | Pitch  70.0365 | Player  67.7289 (τ +0.3546)
+  Δ Pitch -0.0040 Player -0.0195 · 투수 mean t 상관 +0.9997 · 순위이동 1.8/321
+  zip → /home/ubuntu/workspace/산출물/dain/out/submit_d34dh.zip 8.0MB

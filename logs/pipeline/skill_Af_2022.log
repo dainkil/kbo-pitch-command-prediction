@@ -1,0 +1,18 @@
+variant A · 피처 32: ['game_type', 'li', 'inning', 'score_diff_pitcher_team', 'top_bottom', 'home_win_expectancy', 'game_month', 'pitcher_hand', 'batter_hand', 'post23', 'p_n_log', 'p_n_all_log', 'p_fshare', 'pk_mix_1', 'pk_mix_2', 'pk_mix_4', 'pk_mix_5', 'pk_mix_7', 'pk_mix_9', 'pk_mix_10', 'tm_mix_fastball', 'tm_mix_breaking', 'tm_mix_offspeed', 'tm_fb_rel_speed', 'tm_rel_speed', 'tm_n_log', 'b_fshare', 'b_n_all_log', 'b_sh', 'b_he', 'b_fa', 'b_n_log']
+[    7s] loaded (1474868, 46)
+[   12s] 학습 [2020, 2021] · 행 379,753 · 타깃 mean 28.63 sd 2.99
+[  375s] gain%: {'p_fshare': 12.8, 'pk_mix_1': 8.4, 'tm_mix_offspeed': 7.7, 'pk_mix_9': 6.7, 'pk_mix_2': 6.5, 'pk_mix_7': 6.1, 'pk_mix_10': 5.6, 'pk_mix_4': 5.5, 'tm_mix_breaking': 5.2, 'tm_fb_rel_speed': 4.7, 'tm_n_log': 4.5, 'pk_mix_5': 4.3, 'tm_mix_fastball': 4.3, 'tm_rel_speed': 3.6, 'score_diff_pitcher_team': 3.0, 'p_n_log': 2.5, 'pitcher_hand': 2.0, 'p_n_all_log': 1.7, 'b_n_all_log': 1.3, 'b_n_log': 1.2, 'inning': 0.7, 'li': 0.5, 'b_fshare': 0.5, 'game_month': 0.2, 'home_win_expectancy': 0.2, 'b_he': 0.1, 'b_fa': 0.0, 'b_sh': 0.0, 'top_bottom': 0.0, 'post23': 0.0, 'game_type': 0.0, 'batter_hand': 0.0}
+[  375s] saved → ../out/skill_Af_2022 · μ(학습행) mean 28.44 sd 2.40
+
+★ 2022 홀드아웃 · 투수 249명 (≥50구) · 표 season<2022 · EB α=1300
+구간                명    셀prior τ   q_skill τ     EB(셀) τ   EB(skill) τ       ΔEB
+전체              249     +0.1702     +0.2646     +0.3238       +0.3400   +0.0162
+이력 0             33     +0.3333     +0.2500     +0.3333       +0.2500   -0.0833
+1~300            35     +0.0353     +0.1059     +0.1664       +0.1563   -0.0101
+301~1000         52     +0.0649     +0.2172     +0.1991       +0.2428   +0.0437
+1001~3000        93     +0.0986     +0.2609     +0.3834       +0.4053   +0.0220
+3001+            36     +0.0508     +0.3873     +0.5810       +0.5651   -0.0159
+≤300 (소이력)       68     +0.2502     +0.1949     +0.2757       +0.2133   -0.0623
+행 수준 corr(실제 pt): 셀 prior +0.0184 · q_skill +0.0330 · 행 MSE 셀 1378.2 q_skill 1372.7
+μ 분포(평가행): mean 27.76 sd 1.79 · 투수평균 μ sd 1.761 (셀 0.406)
+[  380s] eval done

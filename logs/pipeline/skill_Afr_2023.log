@@ -1,0 +1,18 @@
+variant A · 피처 32: ['game_type', 'li', 'inning', 'score_diff_pitcher_team', 'top_bottom', 'home_win_expectancy', 'game_month', 'pitcher_hand', 'batter_hand', 'post23', 'p_n_log', 'p_n_all_log', 'p_fshare', 'pk_mix_1', 'pk_mix_2', 'pk_mix_4', 'pk_mix_5', 'pk_mix_7', 'pk_mix_9', 'pk_mix_10', 'tm_mix_fastball', 'tm_mix_breaking', 'tm_mix_offspeed', 'tm_fb_rel_speed', 'tm_rel_speed', 'tm_n_log', 'b_fshare', 'b_n_all_log', 'b_sh', 'b_he', 'b_fa', 'b_n_log']
+[    6s] loaded (1474868, 46)
+[   14s] 학습 [2020, 2021, 2022] · 행 562,327 · 타깃 mean -1.51 sd 2.92
+[   17s] gain%: {'p_fshare': 10.8, 'tm_mix_offspeed': 8.0, 'pk_mix_1': 7.8, 'pk_mix_9': 7.5, 'tm_mix_breaking': 6.2, 'pk_mix_2': 5.9, 'tm_mix_fastball': 5.7, 'pk_mix_4': 5.6, 'pk_mix_10': 5.6, 'pk_mix_7': 4.9, 'pk_mix_5': 4.9, 'tm_fb_rel_speed': 4.7, 'tm_n_log': 4.6, 'tm_rel_speed': 4.0, 'p_n_log': 3.3, 'p_n_all_log': 3.0, 'pitcher_hand': 2.5, 'score_diff_pitcher_team': 1.3, 'b_n_log': 1.1, 'b_n_all_log': 0.8, 'inning': 0.6, 'b_fshare': 0.5, 'game_month': 0.3, 'home_win_expectancy': 0.2, 'li': 0.1, 'b_he': 0.0, 'b_sh': 0.0, 'b_fa': 0.0, 'post23': 0.0, 'batter_hand': 0.0, 'game_type': 0.0, 'top_bottom': 0.0}
+[   18s] saved → ../out/skill_Afr_2023 · μ(학습행) mean -1.76 sd 2.12
+
+★ 2023 홀드아웃 · 투수 303명 (≥50구) · 표 season<2023 · EB α=1300
+구간                명    셀prior τ   q_skill τ     EB(셀) τ   EB(skill) τ       ΔEB
+전체              303     +0.1085     +0.2345     +0.2235       +0.3075   +0.0841
+이력 0             46     +0.2947     +0.2522     +0.2947       +0.2522   -0.0425
+1~300            47     -0.1619     +0.0620     -0.1859       +0.0583   +0.2442
+301~1000         48     +0.1525     +0.1897     +0.1702       +0.1968   +0.0266
+1001~3000       104     +0.1031     +0.2367     +0.3193       +0.3167   -0.0026
+3001+            58     +0.0599     +0.3575     +0.5185       +0.4991   -0.0194
+≤300 (소이력)       93     +0.0832     +0.1664     +0.0496       +0.1445   +0.0949
+행 수준 corr(실제 pt): 셀 prior +0.0119 · q_skill +0.0364 · 행 MSE 셀 1372.7 q_skill 1370.0
+μ 분포(평가행): mean 26.05 sd 1.83 · 투수평균 μ sd 1.859 (셀 0.355)
+[   25s] eval done

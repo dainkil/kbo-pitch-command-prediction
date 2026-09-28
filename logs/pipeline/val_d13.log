@@ -1,0 +1,5 @@
+script /tmp/script_d9 · model submit_val_d13/model · test (218836, 29) · 피처 62 · 모델 1 · mode anchor · inject 0.0 · pre23f drop · adj N
+전체 예측 10.7s · 평균 [0.1938 0.2859 0.5203]
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6005  Pitch 69.976  τ +0.2776  Player  63.88  ★Total 68.146

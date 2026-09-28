@@ -1,0 +1,11 @@
+mode final seeds [0, 1, 2, 3, 4] drop ('b_', 'season', 'game_type', 'pgt_', 'p_fshare') params lr=0.02 minleaf=1000 leaves=63
+[    5s] loaded (1474868, 46), tm (1760612, 14)
+학습 시즌 [2020, 2021, 2022, 2023, 2024] · 표 season<2025 → submit_d5/model
+[   16s] Xtr (1055185, 62)  rounds 677
+[   68s] saved lgb_seed0.txt
+[  116s] saved lgb_seed1.txt
+[  168s] saved lgb_seed2.txt
+[  216s] saved lgb_seed3.txt
+[  269s] saved lgb_seed4.txt
+[  270s] EB 표 저장 (α=2000.0, 투수 766) · mode=anchor
+[  270s] final done → submit_d5/model

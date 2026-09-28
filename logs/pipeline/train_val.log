@@ -1,0 +1,10 @@
+[    5s] loaded (1474868, 46), tm (1760612, 14)
+[   14s] Xtr (836349, 65) Xev (218836, 65)
+  [   32s] seed 0 it=260                         Brier 0.6001  Pitch 69.993  τ +0.3313  Player  66.56  ★Total 68.965
+   gain% top15: {'balls_before': 8.0, 'strikes_before': 7.5, 'pgt_fa': 4.4, 'b_n': 3.1, 'li': 3.0, 'base_state': 3.0, 'b_he': 3.0, 'b_sh': 2.9, 'b_fa': 2.9, 'season': 2.4, 'home_win_expectancy': 2.3, 'p_skill': 1.8, 'pgt_he': 1.6, 'pgt_sh': 1.6, 'tm_mix_offspeed': 1.6}
+  [   47s] seed 1 it=215                         Brier 0.6000  Pitch 70.002  τ +0.3404  Player  67.02  ★Total 69.107
+  [   66s] seed 2 it=293                         Brier 0.6000  Pitch 69.998  τ +0.3429  Player  67.14  ★Total 69.142
+  ★ 앙상블 3 seeds                                  Brier 0.5998  Pitch 70.008  τ +0.3438  Player  67.19  ★Total 69.162
+    신인 60명 τ +0.3435
+    비신인 261명 τ +0.3575
+[   66s] val done. best_iters [260, 215, 293]

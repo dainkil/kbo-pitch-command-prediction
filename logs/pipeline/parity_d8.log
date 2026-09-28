@@ -1,0 +1,8 @@
+mode final seeds [0] drop ('b_',) params lr=0.02 minleaf=1000 leaves=63
+[    9s] loaded (1474868, 46), tm (1760612, 14)
+학습 시즌 [2020, 2021, 2022, 2023] · 표 season<2024 → submit_val_d8/model
+[   20s] Xtr (836349, 69)  rounds 560
+[   69s] saved lgb_seed0.txt
+[   70s] EB 표 저장 (α=2000.0, 투수 687) · mode=anchor
+[   70s] 주입  ε=0.5 × sd 1.106 = 0.553점/σ
+[   70s] final done → submit_val_d8/model

@@ -1,0 +1,9 @@
+mode final seeds [0, 1, 2, 3, 4] drop ('b_', 'season', 'game_type', 'pgt_', 'p_fshare') params lr=0.02 minleaf=1000 leaves=63
+[    6s] loaded (1474868, 46), tm (1760612, 14)
+학습 시즌 [2020, 2021, 2022, 2023, 2024] · 표 season<2025 → submit_d22/model
+[   22s] Xtr (1055185, 62)  rounds 677
+[   27s] GBDT 재사용 ['lgb_seed0.txt', 'lgb_seed1.txt', 'lgb_seed2.txt', 'lgb_seed3.txt', 'lgb_seed4.txt']
+[   28s] EB 표 저장 (α=1300.0, 투수 766) · mode=anchor
+[  105s] s_hat 표 712 투수 · center_k=0.5 · s_tr mean 27.88 sd 3.08
+[  105s] skill prior C (../out/skill_Cf_2025) w=1.0 → submit_d22/model
+[  105s] final done → submit_d22/model

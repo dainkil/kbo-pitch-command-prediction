@@ -1,0 +1,21 @@
+=== [1] 2024 배포동일: Cf + center 0.5
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6001  Pitch 69.996  τ +0.2529  Player  62.65  ★Total 67.792
+    τ 전체        321명  +0.2529
+    τ 이력 0       60명  -0.0418
+    τ 1~300      45명  +0.2202
+    τ ≤300      105명  +0.1168
+    τ >300      216명  +0.3401
+=== [2] 배포
+[  105s] s_hat 표 712 투수 · center_k=0.5 · s_tr mean 27.88 sd 3.08
+[  105s] skill prior C (../out/skill_Cf_2025) w=1.0 → submit_d22/model
+[  105s] final done → submit_d22/model
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d22.zip 32.9 MB
+saved output/submission.csv (5 rows) in 0.2s · mean probs [0.1935 0.307  0.4995]
+saved output/submission.csv (218,836 rows) in 32.4s · mean probs [0.189  0.2873 0.5237]
+  elapsed 32.74s · maxRSS 699208KB
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+GBDT 바이트 동일 ✓
+D22_DONE

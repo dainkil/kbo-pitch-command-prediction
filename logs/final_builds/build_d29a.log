@@ -1,0 +1,8 @@
+cmpbar 표: 투수 792 · 리그평균 27.186 · sd 0.730 · 행 cmp sd 2.523
+[게이트] 행 독립 최대차 1.110e-16 · 확률합 2.22e-16 · 최소 5.83e-02  ✓
+   O57 (2024 라벨행·인샘플)                       Score  69.3042 | Pitch  70.0043 | Player  67.6705 (τ +0.3534)
+   O57 + drift κ=0.5 (jm q)                 Score  70.3089 | Pitch  70.1204 | Player  70.7488 (τ +0.4150)
+   d29a: + dain q (proj)                    Score  70.3545 | Pitch  70.1855 | Player  70.7488 (τ +0.4150)
+  Δ vs O57: drift(jm q) Pitch +0.1161 Player +3.0783 · +dain q Pitch +0.0652 Player +0.0000 · 합계 Pitch +0.1812 Player +3.0783
+  투수 mean t 상관 +0.9667 · 평균 순위이동 17.8/321
+  zip → /home/ubuntu/workspace/산출물/dain/out/submit_d29a.zip 40.2MB

@@ -1,0 +1,18 @@
+variant B · 피처 37: ['game_type', 'li', 'inning', 'score_diff_pitcher_team', 'top_bottom', 'home_win_expectancy', 'game_month', 'pitcher_hand', 'batter_hand', 'balls_before', 'strikes_before', 'outs_before', 'num_runners_on', 'run_total_before', 'post23', 'p_n_log', 'p_n_all_log', 'p_fshare', 'pk_mix_1', 'pk_mix_2', 'pk_mix_4', 'pk_mix_5', 'pk_mix_7', 'pk_mix_9', 'pk_mix_10', 'tm_mix_fastball', 'tm_mix_breaking', 'tm_mix_offspeed', 'tm_fb_rel_speed', 'tm_rel_speed', 'tm_n_log', 'b_fshare', 'b_n_all_log', 'b_sh', 'b_he', 'b_fa', 'b_n_log']
+[   10s] loaded (1474868, 46)
+[   25s] 학습 [2020, 2021, 2022, 2023] · 행 829,893 · 타깃 mean 28.08 sd 3.08
+[   57s] gain%: {'game_type': 10.3, 'post23': 9.6, 'pk_mix_1': 6.9, 'tm_mix_breaking': 6.0, 'tm_mix_offspeed': 5.9, 'tm_rel_speed': 5.9, 'tm_mix_fastball': 5.6, 'p_fshare': 5.3, 'pk_mix_2': 5.0, 'pk_mix_5': 5.0, 'pk_mix_9': 4.7, 'tm_fb_rel_speed': 4.6, 'pk_mix_4': 4.2, 'pk_mix_7': 3.7, 'tm_n_log': 3.6, 'pk_mix_10': 3.4, 'p_n_log': 3.2, 'p_n_all_log': 2.6, 'pitcher_hand': 1.2, 'score_diff_pitcher_team': 0.7, 'b_n_all_log': 0.6, 'b_n_log': 0.5, 'game_month': 0.4, 'run_total_before': 0.3, 'home_win_expectancy': 0.3, 'inning': 0.2, 'li': 0.1, 'b_fshare': 0.1, 'top_bottom': 0.1, 'num_runners_on': 0.1, 'b_fa': 0.0, 'b_he': 0.0, 'b_sh': 0.0, 'balls_before': 0.0, 'strikes_before': 0.0, 'batter_hand': 0.0, 'outs_before': 0.0}
+[   58s] saved → ../out/skill_B_2024 · μ(학습행) mean 27.91 sd 2.06
+
+★ 2024 홀드아웃 · 투수 321명 (≥50구) · 표 season<2024 · EB α=1300
+구간                명    셀prior τ   q_skill τ     EB(셀) τ   EB(skill) τ       ΔEB
+전체              321     +0.1552     +0.2873     +0.2445       +0.3421   +0.0975
+이력 0             60     +0.3548     +0.2689     +0.3548       +0.2689   -0.0859
+1~300            45     -0.0859     +0.2384     -0.0162       +0.2606   +0.2768
+301~1000         49     +0.1905     +0.2432     +0.2364       +0.3588   +0.1224
+1001~3000        89     +0.1282     +0.1241     +0.2911       +0.2768   -0.0143
+3001+            78     +0.1102     +0.3233     +0.3646       +0.3613   -0.0033
+≤300 (소이력)      105     +0.2134     +0.2762     +0.2128       +0.2806   +0.0678
+행 수준 corr(실제 pt): 셀 prior +0.0173 · q_skill +0.0420 · 행 MSE 셀 1373.6 q_skill 1370.4
+μ 분포(평가행): mean 26.64 sd 1.65 · 투수평균 μ sd 1.639 (셀 0.354)
+[   67s] eval done

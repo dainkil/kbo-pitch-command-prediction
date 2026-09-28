@@ -1,0 +1,7 @@
+mode final seeds [0] drop ('b_', 'season', 'game_type', 'pgt_', 'p_fshare') params lr=0.02 minleaf=1000 leaves=63
+[    6s] loaded (1474868, 46), tm (1760612, 14)
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/산출물/dain/src/train.py", line 55, in <module>
+    prev_models = json.load(open(os.path.join(mdir, "meta.json")))["models"] if A.skip_gbdt else None   # save_tables 가 meta.json 을 덮어쓰기 전에 읽는다
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'submit_val_d5/model/meta.json'

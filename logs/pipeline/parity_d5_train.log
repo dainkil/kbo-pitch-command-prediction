@@ -1,0 +1,7 @@
+usage: train.py [-h] [--drop DROP] [--lr LR] [--minleaf MINLEAF]
+                [--leaves LEAVES] [--year YEAR] [--upto UPTO] [--out OUT]
+                [--tag TAG] [--combine {gbdt,anchor,blend}] [--lam LAM]
+                [--eb_weight EB_WEIGHT] [--eb_alpha EB_ALPHA]
+                [--inject INJECT] [--eps EPS] [--skip_gbdt]
+                mode [seeds] [rounds]
+train.py: error: unrecognized arguments: 560

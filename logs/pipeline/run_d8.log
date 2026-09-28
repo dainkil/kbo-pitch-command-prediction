@@ -1,0 +1,21 @@
+=== [0] TabPFN 투수 z 표 (2025 제출용, 2024 검산용)
+U=2025: 학습 투수시즌 1277 · 표 투수 890 · z sd 0.637 → /home/ubuntu/workspace/산출물/dain/out/pfn_z_2025.csv
+U=2024: 학습 투수시즌 1011 · 표 투수 796 · z sd 0.631 → /home/ubuntu/workspace/산출물/dain/out/pfn_z_2024.csv
+=== [1] d8 표·EB·주입 (GBDT 재사용)
+[   31s] EB 표 저장 (α=2000.0, 투수 766) · mode=anchor
+[   31s] 주입  ε=0.5 × sd 1.136 = 0.568점/σ
+[   31s] final done → submit_d8/model
+=== [2] 배포동일 검산 (--upto 2024; 기대 τ ≈ .2735, Total ≈ 68.09)
+[   70s] final done → submit_val_d8/model
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6004  Pitch 69.980  τ +0.2735  Player  63.68  ★Total 68.089
+=== [3] zip + 모사 + 행 독립
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d8.zip 31.0 MB
+saved output/submission.csv (5 rows) in 0.2s · mean probs [0.1894 0.3127 0.4979]
+saved output/submission.csv (218,836 rows) in 32.1s · mean probs [0.1944 0.2869 0.5187]
+  elapsed 32.56s · maxRSS 546940KB
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+GBDT 바이트 동일 ✓
+D8_DONE

@@ -1,0 +1,11 @@
+mode val seeds [0, 1, 2] drop ('b_',) params lr=0.02 minleaf=1000 leaves=63
+[    5s] loaded (1474868, 46), tm (1760612, 14)
+[   16s] Xtr (836349, 69) Xev (218836, 69)
+  [   58s] seed 0 it=589                         Brier 0.5996  Pitch 70.020  τ +0.3521  Player  67.60  ★Total 69.295
+   gain% top15: {'balls_before': 9.0, 'strikes_before': 8.8, 'pgt_rev': 3.8, 'base_state': 3.5, 'pgt_fa': 3.3, 'li': 3.3, 'season': 2.7, 'home_win_expectancy': 2.2, 'p_h_sd': 2.1, 'game_month': 1.7, 'game_type': 1.6, 'p_skill': 1.5, 'tm_extension': 1.5, 'p_h_mean': 1.5, 'tm_mix_offspeed': 1.5}
+  [   94s] seed 1 it=523                         Brier 0.5996  Pitch 70.022  τ +0.3429  Player  67.14  ★Total 69.158
+  [  133s] seed 2 it=566                         Brier 0.5995  Pitch 70.023  τ +0.3525  Player  67.63  ★Total 69.303
+  ★ 앙상블 3 seeds                                  Brier 0.5995  Pitch 70.024  τ +0.3501  Player  67.51  ★Total 69.268
+    신인 60명 τ +0.3627
+    비신인 261명 τ +0.3582
+[  133s] val done. best_iters [589, 523, 566]

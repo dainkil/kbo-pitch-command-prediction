@@ -1,0 +1,5 @@
+[게이트] 행 독립 최대차 1.110e-16 · 확률합 2.22e-16 · 최소 6.90e-02  ✓
+   TS (2024 인샘플)                            Score  69.3215 | Pitch  70.0416 | Player  67.6413 (τ +0.3528)
+   dFIN0                                    Score  69.3555 | Pitch  70.0902 | Player  67.6413 (τ +0.3528)
+  Δ Pitch +0.0485 Player +0.000000 · 투수 평균점수 최대차 7.11e-15 (Player 불변 검증)
+  zip → /home/ubuntu/workspace/산출물/dain/out/submit_dFIN0.zip 40.4MB

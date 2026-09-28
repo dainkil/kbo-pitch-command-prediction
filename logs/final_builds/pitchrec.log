@@ -1,0 +1,24 @@
+홀드아웃 번들: a_t=2400.0 use_g=0.5 cmp_g=-0.15 poff=False
+이력 있는 2024 행 비율 80.5% · (s−cmp) 행 sd 2.618 · 상호작용 잔차 sd 2.165 · drift 행 sd 2.495
+   O57형 홀드아웃 base                           Score  66.1036 | Pitch  69.8463 | Player  57.3706 (τ +0.1474)
+     (참고) q 비앵커                             Score  66.6155 | Pitch  69.9201 | Player  58.9049 (τ +0.1781)
+   resid κ=0.25                             Score  66.0231 | Pitch  69.8064 | Player  57.1954 (τ +0.1439)
+   resid κ=0.5                              Score  65.8535 | Pitch  69.7619 | Player  56.7339 (τ +0.1347)
+   resid κ=1.0                              Score  65.3714 | Pitch  69.6590 | Player  55.3671 (τ +0.1073)
+   drift κ=0.25 (이력 있는 투수만)                 Score  66.2442 | Pitch  69.8928 | Player  57.7308 (τ +0.1546)
+   drift κ=0.5 (이력 있는 투수만)                  Score  66.3065 | Pitch  69.9334 | Player  57.8437 (τ +0.1569)
+   drift κ=1.0 (이력 있는 투수만)                  Score  66.3124 | Pitch  69.9969 | Player  57.7152 (τ +0.1543)
+   full κ=0.25 (s − sbar_p)                 Score  66.1622 | Pitch  69.8565 | Player  57.5419 (τ +0.1508)
+   full κ=0.5 (s − sbar_p)                  Score  66.1945 | Pitch  69.8636 | Player  57.6334 (τ +0.1527)
+   resid κ=0.5 + drift 0.5                  Score  66.1945 | Pitch  69.8636 | Player  57.6334 (τ +0.1527)
+
+요약 ΔPitch / ΔPlayer (as-of 2024, base 대비):
+   resid        κ=0.25  -0.0400  -0.1752
+   resid        κ=0.5   -0.0845  -0.6367
+   resid        κ=1.0   -0.1873  -2.0035
+   drift        κ=0.25  +0.0465  +0.3602
+   drift        κ=0.5   +0.0871  +0.4731
+   drift        κ=1.0   +0.1506  +0.3446
+   full         κ=0.25  +0.0102  +0.1713
+   full         κ=0.5   +0.0172  +0.2629
+   resid+drift  κ=0.5   +0.0172  +0.2629

@@ -1,0 +1,150 @@
+[   8s] [2022] 회귀 학습 491 투수시즌 · 피처 36 · 평가 투수(이력有) 613
+
+══════════════════════════════════════════════════════════════════════════════════════════
+2022
+══════════════════════════════════════════════════════════════════════════════════════════
+  기준: 배치셀 prior (=y2)                            Brier 0.6029  Pitch 69.854  τ +0.2733  Player  63.66  ★Total 67.997
+
+──── prior 단독 τ (50+ 투수 중 이력 있는 투수)
+    ridge3     n=255 τ +0.1774
+    ridge30    n=255 τ +0.1631
+    ridge300   n=255 τ +0.1404
+    lgb        n=255 τ +0.1212
+    cell(행평균)  n=306 τ +0.1231
+
+──── EB 에 prior 교체/혼합 → anchor Total (v3 GBDT seed0)
+    ridge3 mix=0.5 α=500                         Brier 0.6027  Pitch 69.863  τ +0.2560  Player  62.80  ★Total 67.744
+    ridge3 mix=0.5 α=2000                        Brier 0.6028  Pitch 69.860  τ +0.2748  Player  63.74  ★Total 68.024
+    ridge3 mix=0.5 α=4000                        Brier 0.6028  Pitch 69.858  τ +0.2669  Player  63.35  ★Total 67.904
+    ridge3 mix=1.0 α=500                         Brier 0.6027  Pitch 69.864  τ +0.2557  Player  62.78  ★Total 67.740
+    ridge3 mix=1.0 α=2000                        Brier 0.6027  Pitch 69.864  τ +0.2584  Player  62.92  ★Total 67.781
+    ridge3 mix=1.0 α=4000                        Brier 0.6027  Pitch 69.863  τ +0.2474  Player  62.37  ★Total 67.615
+    ridge30 mix=0.5 α=500                        Brier 0.6027  Pitch 69.863  τ +0.2550  Player  62.75  ★Total 67.730
+    ridge30 mix=0.5 α=2000                       Brier 0.6028  Pitch 69.860  τ +0.2752  Player  63.76  ★Total 68.030
+    ridge30 mix=0.5 α=4000                       Brier 0.6029  Pitch 69.857  τ +0.2655  Player  63.27  ★Total 67.882
+    ridge30 mix=1.0 α=500                        Brier 0.6027  Pitch 69.865  τ +0.2550  Player  62.75  ★Total 67.730
+    ridge30 mix=1.0 α=2000                       Brier 0.6027  Pitch 69.864  τ +0.2592  Player  62.96  ★Total 67.792
+    ridge30 mix=1.0 α=4000                       Brier 0.6028  Pitch 69.862  τ +0.2479  Player  62.40  ★Total 67.622
+    ridge300 mix=0.5 α=500                       Brier 0.6027  Pitch 69.863  τ +0.2523  Player  62.61  ★Total 67.688
+    ridge300 mix=0.5 α=2000                      Brier 0.6028  Pitch 69.859  τ +0.2692  Player  63.46  ★Total 67.940
+    ridge300 mix=0.5 α=4000                      Brier 0.6029  Pitch 69.856  τ +0.2656  Player  63.28  ★Total 67.883
+    ridge300 mix=1.0 α=500                       Brier 0.6027  Pitch 69.864  τ +0.2500  Player  62.50  ★Total 67.655
+    ridge300 mix=1.0 α=2000                      Brier 0.6027  Pitch 69.863  τ +0.2585  Player  62.93  ★Total 67.782
+    ridge300 mix=1.0 α=4000                      Brier 0.6028  Pitch 69.861  τ +0.2458  Player  62.29  ★Total 67.590
+    lgb mix=0.5 α=500                            Brier 0.6027  Pitch 69.864  τ +0.2446  Player  62.23  ★Total 67.573
+    lgb mix=0.5 α=2000                           Brier 0.6028  Pitch 69.861  τ +0.2491  Player  62.45  ★Total 67.639
+    lgb mix=0.5 α=4000                           Brier 0.6028  Pitch 69.858  τ +0.2351  Player  61.75  ★Total 67.426
+    lgb mix=1.0 α=500                            Brier 0.6027  Pitch 69.865  τ +0.2348  Player  61.74  ★Total 67.429
+    lgb mix=1.0 α=2000                           Brier 0.6027  Pitch 69.864  τ +0.2153  Player  60.77  ★Total 67.134
+    lgb mix=1.0 α=4000                           Brier 0.6028  Pitch 69.861  τ +0.1930  Player  59.65  ★Total 66.797
+[  13s] [2023] 회귀 학습 746 투수시즌 · 피처 36 · 평가 투수(이력有) 707
+
+══════════════════════════════════════════════════════════════════════════════════════════
+2023
+══════════════════════════════════════════════════════════════════════════════════════════
+  기준: 배치셀 prior (=y2)                            Brier 0.6026  Pitch 69.868  τ +0.2283  Player  61.41  ★Total 67.332
+
+──── prior 단독 τ (50+ 투수 중 이력 있는 투수)
+    ridge3     n=262 τ +0.0723
+    ridge30    n=262 τ +0.0625
+    ridge300   n=262 τ +0.0605
+    lgb        n=262 τ +0.1347
+    cell(행평균)  n=303 τ +0.1085
+
+──── EB 에 prior 교체/혼합 → anchor Total (v3 GBDT seed0)
+    ridge3 mix=0.5 α=500                         Brier 0.6026  Pitch 69.868  τ +0.2205  Player  61.02  ★Total 67.214
+    ridge3 mix=0.5 α=2000                        Brier 0.6025  Pitch 69.873  τ +0.2307  Player  61.53  ★Total 67.371
+    ridge3 mix=0.5 α=4000                        Brier 0.6026  Pitch 69.872  τ +0.2277  Player  61.38  ★Total 67.325
+    ridge3 mix=1.0 α=500                         Brier 0.6026  Pitch 69.869  τ +0.2261  Player  61.31  ★Total 67.300
+    ridge3 mix=1.0 α=2000                        Brier 0.6025  Pitch 69.875  τ +0.2258  Player  61.29  ★Total 67.300
+    ridge3 mix=1.0 α=4000                        Brier 0.6025  Pitch 69.874  τ +0.2047  Player  60.23  ★Total 66.982
+    ridge30 mix=0.5 α=500                        Brier 0.6026  Pitch 69.868  τ +0.2210  Player  61.05  ★Total 67.222
+    ridge30 mix=0.5 α=2000                       Brier 0.6025  Pitch 69.873  τ +0.2284  Player  61.42  ★Total 67.337
+    ridge30 mix=0.5 α=4000                       Brier 0.6026  Pitch 69.872  τ +0.2280  Player  61.40  ★Total 67.331
+    ridge30 mix=1.0 α=500                        Brier 0.6026  Pitch 69.870  τ +0.2265  Player  61.32  ★Total 67.306
+    ridge30 mix=1.0 α=2000                       Brier 0.6025  Pitch 69.876  τ +0.2282  Player  61.41  ★Total 67.336
+    ridge30 mix=1.0 α=4000                       Brier 0.6025  Pitch 69.875  τ +0.2097  Player  60.48  ★Total 67.058
+    ridge300 mix=0.5 α=500                       Brier 0.6026  Pitch 69.868  τ +0.2219  Player  61.09  ★Total 67.236
+    ridge300 mix=0.5 α=2000                      Brier 0.6025  Pitch 69.873  τ +0.2304  Player  61.52  ★Total 67.367
+    ridge300 mix=0.5 α=4000                      Brier 0.6026  Pitch 69.872  τ +0.2298  Player  61.49  ★Total 67.357
+    ridge300 mix=1.0 α=500                       Brier 0.6026  Pitch 69.870  τ +0.2258  Player  61.29  ★Total 67.297
+    ridge300 mix=1.0 α=2000                      Brier 0.6025  Pitch 69.876  τ +0.2311  Player  61.56  ★Total 67.380
+    ridge300 mix=1.0 α=4000                      Brier 0.6025  Pitch 69.876  τ +0.2187  Player  60.93  ★Total 67.193
+    lgb mix=0.5 α=500                            Brier 0.6026  Pitch 69.868  τ +0.2170  Player  60.85  ★Total 67.163
+    lgb mix=0.5 α=2000                           Brier 0.6025  Pitch 69.873  τ +0.2276  Player  61.38  ★Total 67.325
+    lgb mix=0.5 α=4000                           Brier 0.6026  Pitch 69.872  τ +0.2248  Player  61.24  ★Total 67.283
+    lgb mix=1.0 α=500                            Brier 0.6026  Pitch 69.869  τ +0.2233  Player  61.16  ★Total 67.257
+    lgb mix=1.0 α=2000                           Brier 0.6025  Pitch 69.875  τ +0.2250  Player  61.25  ★Total 67.288
+    lgb mix=1.0 α=4000                           Brier 0.6025  Pitch 69.874  τ +0.2117  Player  60.58  ★Total 67.087
+[  19s] [2024] 회귀 학습 1008 투수시즌 · 피처 36 · 평가 투수(이력有) 784
+
+══════════════════════════════════════════════════════════════════════════════════════════
+2024
+══════════════════════════════════════════════════════════════════════════════════════════
+  기준: 배치셀 prior (=y2)                            Brier 0.6004  Pitch 69.981  τ +0.2478  Player  62.39  ★Total 67.703
+
+──── prior 단독 τ (50+ 투수 중 이력 있는 투수)
+    ridge3     n=266 τ +0.1356
+    ridge30    n=266 τ +0.1216
+    ridge300   n=266 τ +0.0815
+    lgb        n=266 τ +0.1749
+    cell(행평균)  n=321 τ +0.1552
+
+──── EB 에 prior 교체/혼합 → anchor Total (v3 GBDT seed0)
+    ridge3 mix=0.5 α=500                         Brier 0.6003  Pitch 69.986  τ +0.2566  Player  62.83  ★Total 67.840
+    ridge3 mix=0.5 α=2000                        Brier 0.6003  Pitch 69.987  τ +0.2535  Player  62.68  ★Total 67.794
+    ridge3 mix=0.5 α=4000                        Brier 0.6003  Pitch 69.986  τ +0.2464  Player  62.32  ★Total 67.686
+    ridge3 mix=1.0 α=500                         Brier 0.6002  Pitch 69.988  τ +0.2596  Player  62.98  ★Total 67.886
+    ridge3 mix=1.0 α=2000                        Brier 0.6002  Pitch 69.990  τ +0.2450  Player  62.25  ★Total 67.668
+    ridge3 mix=1.0 α=4000                        Brier 0.6002  Pitch 69.988  τ +0.2293  Player  61.47  ★Total 67.431
+    ridge30 mix=0.5 α=500                        Brier 0.6003  Pitch 69.986  τ +0.2559  Player  62.80  ★Total 67.829
+    ridge30 mix=0.5 α=2000                       Brier 0.6003  Pitch 69.987  τ +0.2511  Player  62.56  ★Total 67.757
+    ridge30 mix=0.5 α=4000                       Brier 0.6003  Pitch 69.985  τ +0.2443  Player  62.21  ★Total 67.654
+    ridge30 mix=1.0 α=500                        Brier 0.6002  Pitch 69.988  τ +0.2578  Player  62.89  ★Total 67.859
+    ridge30 mix=1.0 α=2000                       Brier 0.6002  Pitch 69.990  τ +0.2395  Player  61.97  ★Total 67.585
+    ridge30 mix=1.0 α=4000                       Brier 0.6002  Pitch 69.988  τ +0.2220  Player  61.10  ★Total 67.322
+    ridge300 mix=0.5 α=500                       Brier 0.6003  Pitch 69.985  τ +0.2512  Player  62.56  ★Total 67.758
+    ridge300 mix=0.5 α=2000                      Brier 0.6003  Pitch 69.986  τ +0.2450  Player  62.25  ★Total 67.665
+    ridge300 mix=0.5 α=4000                      Brier 0.6003  Pitch 69.984  τ +0.2346  Player  61.73  ★Total 67.508
+    ridge300 mix=1.0 α=500                       Brier 0.6003  Pitch 69.987  τ +0.2519  Player  62.60  ★Total 67.770
+    ridge300 mix=1.0 α=2000                      Brier 0.6002  Pitch 69.989  τ +0.2292  Player  61.46  ★Total 67.431
+    ridge300 mix=1.0 α=4000                      Brier 0.6003  Pitch 69.987  τ +0.2103  Player  60.51  ★Total 67.145
+    lgb mix=0.5 α=500                            Brier 0.6003  Pitch 69.986  τ +0.2604  Player  63.02  ★Total 67.896
+    lgb mix=0.5 α=2000                           Brier 0.6002  Pitch 69.989  τ +0.2529  Player  62.65  ★Total 67.786
+    lgb mix=0.5 α=4000                           Brier 0.6002  Pitch 69.988  τ +0.2453  Player  62.26  ★Total 67.671
+    lgb mix=1.0 α=500                            Brier 0.6002  Pitch 69.989  τ +0.2672  Player  63.36  ★Total 67.999
+    lgb mix=1.0 α=2000                           Brier 0.6002  Pitch 69.992  τ +0.2421  Player  62.10  ★Total 67.626
+    lgb mix=1.0 α=4000                           Brier 0.6002  Pitch 69.992  τ +0.2247  Player  61.23  ★Total 67.365
+
+══════════════════════════════════════════════════════════════════════════════════════════
+3폴드 요약 (게이트: τ·Total 3/3 > 배치셀 prior)
+══════════════════════════════════════════════════════════════════════════════════════════
+                        tau                              tot gate
+Y                      2022    2023    2024    mean     mean     
+m                                                                
+ridge3_m0.5_a2000    0.2748  0.2307  0.2535  0.2530  67.7293    ✓
+ridge30_m0.5_a2000   0.2752  0.2284  0.2511  0.2516  67.7082    ✓
+cell                 0.2733  0.2283  0.2478  0.2498  67.6774    ✗
+ridge300_m0.5_a2000  0.2692  0.2304  0.2450  0.2482  67.6571    ✗
+ridge3_m1.0_a500     0.2557  0.2261  0.2596  0.2472  67.6422    ✗
+ridge3_m0.5_a4000    0.2669  0.2277  0.2464  0.2470  67.6384    ✗
+ridge30_m1.0_a500    0.2550  0.2265  0.2578  0.2464  67.6317    ✗
+ridge30_m0.5_a4000   0.2655  0.2280  0.2443  0.2459  67.6220    ✗
+ridge3_m0.5_a500     0.2560  0.2205  0.2566  0.2444  67.5993    ✗
+ridge30_m0.5_a500    0.2550  0.2210  0.2559  0.2440  67.5936    ✗
+ridge300_m0.5_a4000  0.2656  0.2298  0.2346  0.2433  67.5825    ✗
+lgb_m0.5_a2000       0.2491  0.2276  0.2529  0.2432  67.5833    ✗
+ridge3_m1.0_a2000    0.2584  0.2258  0.2450  0.2431  67.5830    ✗
+ridge300_m1.0_a500   0.2500  0.2258  0.2519  0.2426  67.5738    ✗
+ridge30_m1.0_a2000   0.2592  0.2282  0.2395  0.2423  67.5708    ✗
+lgb_m1.0_a500        0.2348  0.2233  0.2672  0.2418  67.5617    ✗
+ridge300_m0.5_a500   0.2523  0.2219  0.2512  0.2418  67.5603    ✗
+lgb_m0.5_a500        0.2446  0.2170  0.2604  0.2407  67.5441    ✗
+ridge300_m1.0_a2000  0.2585  0.2311  0.2292  0.2396  67.5309    ✗
+lgb_m0.5_a4000       0.2351  0.2248  0.2453  0.2351  67.4599    ✗
+lgb_m1.0_a2000       0.2153  0.2250  0.2421  0.2275  67.3491    ✗
+ridge3_m1.0_a4000    0.2474  0.2047  0.2293  0.2271  67.3429    ✗
+ridge30_m1.0_a4000   0.2479  0.2097  0.2220  0.2265  67.3339    ✗
+ridge300_m1.0_a4000  0.2458  0.2187  0.2103  0.2249  67.3093    ✗
+lgb_m1.0_a4000       0.1930  0.2117  0.2247  0.2098  67.0831    ✗
+[  23s] done

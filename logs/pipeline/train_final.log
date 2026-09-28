@@ -1,0 +1,6 @@
+[    6s] loaded (1474868, 46), tm (1760612, 14)
+[   15s] Xtr (1055185, 65)  rounds 294
+[   36s] saved lgb_seed0.txt
+[   54s] saved lgb_seed1.txt
+[   73s] saved lgb_seed2.txt
+[   73s] final done → /home/ubuntu/workspace/산출물/dain/src/submit/model

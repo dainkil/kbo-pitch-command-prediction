@@ -1,0 +1,29 @@
+fake test 2024: 218836 rows, 29 cols
+=== [A] final --upto 2024 (학습 2020–2023) → script.py 경로로 2024 채점
+                [--tag TAG]
+                mode [seeds] [rounds]
+train.py: error: unrecognized arguments: --rounds 560
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/산출물/dain/src/verify.py", line 9, in <module>
+    T = load_tables(Path(mdir)); meta = T["meta"]
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/workspace/산출물/dain/src/submit/script.py", line 55, in load_tables
+    T = {"meta": json.load(open(mdir / "meta.json", encoding="utf-8"))}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'submit_val/model/meta.json'
+=== [B] 제출본(d4) 행 독립 검산 (더미 test 대신 fake 2024, season 그대로)
+test (218836, 29) · 피처 69 · 모델 5
+전체 예측 14.5s · 평균 [0.1842 0.2869 0.5289]
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+=== [C] 3폴드 × 3설계 (seed 0)
+[2022 v3]   ★ 앙상블 1 seeds                                  Brier 0.6009  Pitch 69.957  τ +0.4813  Player  74.06  ★Total 71.189
+[2022 noseason]   ★ 앙상블 1 seeds                                  Brier 0.6009  Pitch 69.954  τ +0.4726  Player  73.63  ★Total 71.057
+[2022 noF]   ★ 앙상블 1 seeds                                  Brier 0.6032  Pitch 69.840  τ +0.2763  Player  63.82  ★Total 68.033
+[2023 v3]   ★ 앙상블 1 seeds                                  Brier 0.6038  Pitch 69.812  τ +0.0656  Player  53.28  ★Total 64.852
+[2023 noseason]   ★ 앙상블 1 seeds                                  Brier 0.6034  Pitch 69.831  τ +0.0725  Player  53.62  ★Total 64.969
+[2023 noF]   ★ 앙상블 1 seeds                                  Brier 0.6010  Pitch 69.951  τ +0.1545  Player  57.73  ★Total 66.283
+[2024 v3]   ★ 앙상블 1 seeds                                  Brier 0.5996  Pitch 70.020  τ +0.3521  Player  67.60  ★Total 69.295
+[2024 noseason]   ★ 앙상블 1 seeds                                  Brier 0.6003  Pitch 69.983  τ +0.2928  Player  64.64  ★Total 68.380
+[2024 noF]   ★ 앙상블 1 seeds                                  Brier 0.6000  Pitch 70.001  τ +0.2689  Player  63.45  ★Total 68.035
+DIAG_DONE

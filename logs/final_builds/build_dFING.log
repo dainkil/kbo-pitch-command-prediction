@@ -1,0 +1,12 @@
+JMDIR=/home/ubuntu/workspace/산출물/종민/submit_FIN_G
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/산출물/dain/src/l236x/build_hyb2.py", line 16, in <module>
+    d = load_d(); dl = d[d.lab]; tr = d[B29]; rng = np.random.default_rng(0); Tst = tr.loc[rng.choice(len(tr), 30000, replace=False)].reset_index(drop=True); Pp = pred(Tst); wv = 0.0
+                                                                                                                                                                   ^^^^^^^^^
+  File "/home/ubuntu/workspace/산출물/dain/src/l236x/build_hyb2.py", line 15, in <lambda>
+    sys.path.insert(0, out); D = load_mod("hyb2", out + "/script.py"); pl = __import__("pathlib").Path; pred = lambda df: D.predict_all(df.reset_index(drop=True), pl(out + "/model"))
+                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/workspace/산출물/dain/src/submit_dFING/script.py", line 15, in predict_all
+    jm = _load_jm(mdir / "jm_root"); B = jm.make_bundle(mdir / "jm_root")
+                                         ^^^^^^^^^^^^^^
+AttributeError: module 'jm_script' has no attribute 'make_bundle'

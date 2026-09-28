@@ -1,0 +1,5 @@
+  GEOF: F 행 2023+ 반대투구율 0.2929 · F 행 119,422 (2019~22 73,505)
+  ★comparable prior: 패널 5개·1063투수시즌 · 표 792명 · m sd 1.375 · 계수 pk_1=-0.79 pk_4=+0.22 pk_7=+0.67 pk_2=+0.39 pk_10=-0.23 pk_5=+0.29 pk_9=+0.37 rel_speed=+0.05 rel_height=+0.07 spin_rate=-0.13 extension=+0.06 induced_vert_break=+0.35 early=-0.02 hand=+0.48
+RK 재직교화: 기존 잔차와 상관 +0.9053 · 현재 목표 t_p 와 상관 기존 +0.150 → 새 +0.078
+poff 대비: 상관 +0.9803 · 총 sd 0.549 · 평균|Δ| 0.086
+saved /home/ubuntu/workspace/산출물/dain/src/submit_d35soft05rk

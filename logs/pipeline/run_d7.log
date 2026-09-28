@@ -1,0 +1,20 @@
+=== [1] d7 표·EB·주입 (GBDT 재사용)
+[   24s] GBDT 재사용 ['lgb_seed0.txt', 'lgb_seed1.txt', 'lgb_seed2.txt', 'lgb_seed3.txt', 'lgb_seed4.txt']
+[   25s] EB 표 저장 (α=2000.0, 투수 766) · mode=anchor
+[   25s] 주입 miss ε=0.4 × sd 1.136 = 0.454점/σ
+[   25s] final done → submit_d7/model
+=== [2] 배포동일 검산 (--upto 2024: d4 설계 GBDT 1시드 + EB + 주입 → 2024 채점; 기대 τ ≈ .2478+.0141=.262)
+[   59s] 주입 miss ε=0.4 × sd 1.106 = 0.442점/σ
+[   59s] final done → submit_val_d7/model
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6003  Pitch 69.983  τ +0.2619  Player  63.09  ★Total 67.916
+=== [3] zip + 평가서버 모사 + 행 독립
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d7.zip 31.0 MB
+saved output/submission.csv (5 rows) in 0.2s · mean probs [0.1881 0.3127 0.4992]
+saved output/submission.csv (218,836 rows) in 30.0s · mean probs [0.1938 0.2869 0.5193]
+  elapsed 30.40s · maxRSS 552008KB
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+GBDT 바이트 동일 ✓
+D7_DONE

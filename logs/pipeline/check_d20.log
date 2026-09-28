@@ -1,0 +1,4 @@
+hybrid 예측 23.8s
+행별 점수 |hybrid − L87| max 2.13e-14
+  L87 단독 (그의 q + 그의 t)                           Brier 0.6002  Pitch 69.989  τ +0.3432  Player  67.16  ★Total 69.141
+  d20 하이브리드 (dain q + 그의 t)                      Brier 0.5974  Pitch 70.130  τ +0.3432  Player  67.16  ★Total 69.239

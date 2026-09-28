@@ -1,0 +1,17 @@
+=== [2] (완료) d6
+=== [3] 배포동일 검산 (anchor 설계, --upto 2024 → 2024 채점; 기대 ≈ final_eval anchor1.0 2024: Total 67.69 / τ 0.248)
+    T = {"meta": json.load(open(mdir / "meta.json", encoding="utf-8"))}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'submit_val_d5/model/meta.json'
+    T = {"meta": json.load(open(mdir / "meta.json", encoding="utf-8"))}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'submit_val_d5/model/meta.json'
+=== [4] zip + 평가서버 모사 (더미 5행 · 218,992행 타이밍)
+cp: cannot stat 'submit_d5/model': No such file or directory
+cp: cannot stat 'submit_d6/model': No such file or directory
+=== [5] 행 독립 검산 (zip 의 model)
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+FINAL_DONE

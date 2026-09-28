@@ -1,0 +1,5 @@
+variant C · 피처 29: ['li', 'inning', 'score_diff_pitcher_team', 'top_bottom', 'home_win_expectancy', 'game_month', 'pitcher_hand', 'batter_hand', 'p_n_log', 'p_n_all_log', 'pk_mix_1', 'pk_mix_2', 'pk_mix_4', 'pk_mix_5', 'pk_mix_7', 'pk_mix_9', 'pk_mix_10', 'tm_mix_fastball', 'tm_mix_breaking', 'tm_mix_offspeed', 'tm_fb_rel_speed', 'tm_rel_speed', 'tm_n_log', 'b_fshare', 'b_n_all_log', 'b_sh', 'b_he', 'b_fa', 'b_n_log']
+[    6s] loaded (1474868, 46)
+[   27s] 학습 [2020, 2021, 2022, 2023, 2024] · 행 990,232 · 타깃 mean 27.64 sd 3.04
+[   50s] gain%: {'pk_mix_1': 14.7, 'tm_mix_offspeed': 9.1, 'pk_mix_4': 6.3, 'tm_mix_breaking': 6.1, 'pk_mix_2': 6.0, 'pk_mix_7': 5.8, 'pk_mix_10': 5.7, 'tm_rel_speed': 5.7, 'pk_mix_9': 4.8, 'tm_n_log': 4.7, 'tm_fb_rel_speed': 4.7, 'pk_mix_5': 4.5, 'p_n_all_log': 4.0, 'tm_mix_fastball': 3.6, 'p_n_log': 3.0, 'b_fshare': 2.3, 'score_diff_pitcher_team': 1.9, 'pitcher_hand': 1.8, 'inning': 1.2, 'b_n_all_log': 1.2, 'game_month': 0.7, 'li': 0.7, 'b_n_log': 0.7, 'home_win_expectancy': 0.4, 'b_sh': 0.3, 'b_fa': 0.1, 'b_he': 0.0, 'batter_hand': 0.0, 'top_bottom': 0.0}
+[   52s] saved → ../out/skill_Cf_2025 · μ(학습행) mean 27.31 sd 1.97

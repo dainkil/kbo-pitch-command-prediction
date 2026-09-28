@@ -1,0 +1,9 @@
+mode final seeds [0, 1, 2, 3, 4] drop ('b_',) params lr=0.02 minleaf=1000 leaves=63
+[    5s] loaded (1474868, 46), tm (1760612, 14)
+[   16s] Xtr (1055185, 69)  rounds 643
+[   67s] saved lgb_seed0.txt
+[  114s] saved lgb_seed1.txt
+[  161s] saved lgb_seed2.txt
+[  211s] saved lgb_seed3.txt
+[  257s] saved lgb_seed4.txt
+[  257s] final done → /home/ubuntu/workspace/산출물/dain/src/submit/model

@@ -1,0 +1,5 @@
+script /home/ubuntu/workspace/산출물/dain/src/script_hybrid · model submit_d24/model · test (218836, 29) · 피처 62 · 모델 5 · mode jm_anchor · inject 0 · pre23f keep · adj N
+전체 예측 30.8s · 평균 [0.1983 0.2873 0.5144]
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 1.11e-16  → FAIL
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.5973  Pitch 70.137  τ +0.3830  Player  69.15  ★Total 69.842

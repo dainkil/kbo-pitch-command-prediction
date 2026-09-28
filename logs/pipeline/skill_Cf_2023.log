@@ -1,0 +1,18 @@
+variant C · 피처 29: ['li', 'inning', 'score_diff_pitcher_team', 'top_bottom', 'home_win_expectancy', 'game_month', 'pitcher_hand', 'batter_hand', 'p_n_log', 'p_n_all_log', 'pk_mix_1', 'pk_mix_2', 'pk_mix_4', 'pk_mix_5', 'pk_mix_7', 'pk_mix_9', 'pk_mix_10', 'tm_mix_fastball', 'tm_mix_breaking', 'tm_mix_offspeed', 'tm_fb_rel_speed', 'tm_rel_speed', 'tm_n_log', 'b_fshare', 'b_n_all_log', 'b_sh', 'b_he', 'b_fa', 'b_n_log']
+[    7s] loaded (1474868, 46)
+[   17s] 학습 [2020, 2021, 2022] · 행 562,327 · 타깃 mean 28.01 sd 3.07
+[  372s] gain%: {'tm_mix_offspeed': 10.3, 'pk_mix_1': 9.9, 'pk_mix_4': 6.5, 'pk_mix_10': 6.1, 'tm_n_log': 6.0, 'pk_mix_7': 5.9, 'tm_mix_breaking': 5.7, 'tm_fb_rel_speed': 5.6, 'pk_mix_9': 5.2, 'tm_mix_fastball': 5.1, 'pk_mix_2': 5.0, 'pk_mix_5': 4.6, 'tm_rel_speed': 4.2, 'p_n_all_log': 4.0, 'p_n_log': 3.7, 'score_diff_pitcher_team': 2.6, 'pitcher_hand': 2.3, 'b_n_all_log': 1.8, 'li': 1.5, 'b_fshare': 1.5, 'b_n_log': 1.4, 'inning': 0.7, 'game_month': 0.2, 'b_sh': 0.2, 'b_he': 0.1, 'home_win_expectancy': 0.1, 'b_fa': 0.0, 'batter_hand': 0.0, 'top_bottom': 0.0}
+[  373s] saved → ../out/skill_Cf_2023 · μ(학습행) mean 27.74 sd 2.23
+
+★ 2023 홀드아웃 · 투수 303명 (≥50구) · 표 season<2023 · EB α=1300
+구간                명    셀prior τ   q_skill τ     EB(셀) τ   EB(skill) τ       ΔEB
+전체              303     +0.1085     +0.1978     +0.2235       +0.2819   +0.0584
+이력 0             46     +0.2947     +0.1517     +0.2947       +0.1517   -0.1430
+1~300            47     -0.1619     +0.0990     -0.1859       +0.0971   +0.2831
+301~1000         48     +0.1525     +0.2465     +0.1702       +0.1950   +0.0248
+1001~3000       104     +0.1031     +0.1867     +0.3193       +0.2931   -0.0261
+3001+            58     +0.0599     +0.3224     +0.5185       +0.4918   -0.0266
+≤300 (소이력)       93     +0.0832     +0.1379     +0.0496       +0.1304   +0.0809
+행 수준 corr(실제 pt): 셀 prior +0.0119 · q_skill +0.0304 · 행 MSE 셀 1372.7 q_skill 1369.5
+μ 분포(평가행): mean 26.82 sd 1.59 · 투수평균 μ sd 1.608 (셀 0.355)
+[  380s] eval done

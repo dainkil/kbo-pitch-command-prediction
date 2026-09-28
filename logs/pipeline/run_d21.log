@@ -1,0 +1,20 @@
+=== [1] 2024 배포동일: submit_val_d10base (α1300, GBDT<2024) 에 hist_delta 만 추가
+adj.json + hist_delta {'d0': -0.82, 'd1': -1.45, 'd2': -1.17}
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6007  Pitch 69.966  τ +0.2037  Player  60.19  ★Total 67.032
+    τ 전체        321명  +0.2037
+    τ 이력 0       60명  -0.1322
+    τ 1~300      45명  +0.0101
+    τ ≤300      105명  -0.0271
+    τ >300      216명  +0.3050
+=== [2] 배포: d9 GBDT 5시드 + α1300 + hist_delta
+[   29s] final done → submit_d21/model
+adj.json + hist_delta {'d0': -0.82, 'd1': -1.45, 'd2': -1.17}
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d21.zip 32.6 MB
+saved output/submission.csv (5 rows) in 0.2s · mean probs [0.1927 0.307  0.5003]
+saved output/submission.csv (218,836 rows) in 32.6s · mean probs [0.1933 0.2873 0.5193]
+  elapsed 32.97s · maxRSS 548896KB
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+D21_DONE

@@ -1,0 +1,24 @@
+
+══════════════════════════════════════════════════════════════════════════════════════════
+A. 상황 + 투수·타자 EB 인코딩 (학습 2020–2023, 평가 2024)
+══════════════════════════════════════════════════════════════════════════════════════════
+[    5s] X (836349, 36) → 평가 (218836, 36)  열: ['game_month', 'game_dayofweek', 'inning', 'balls_before', 'strikes_before', 'outs_before', 'run_top_before', 'run_bot_before', 'run_total_before', 'score_diff_home', 'score_diff_pitcher_team', 'runner_on_1b', 'runner_on_2b', 'runner_on_3b', 'num_runners_on', 'home_win_expectancy', 'away_win_expectancy', 'li', 'pitcher_hand', 'batter_hand', 'top_bottom', 'game_type', 'base_state', 'p_sh', 'p_he', 'p_fa', 'p_n', 'b_sh', 'b_he', 'b_fa', 'b_n', 'p1_sh', 'p1_he', 'p1_fa', 'p1_n', 'p_skill']
+  best_iter 329
+  ★ LGB 상황+이력                                    Brier 0.6011  Pitch 69.943  τ +0.2012  Player  60.06  ★Total 66.978
+  gain%: {'balls_before': 7.7, 'strikes_before': 7.5, 'p_skill': 5.3, 'b_n': 4.9, 'li': 4.7, 'b_he': 4.6, 'p_fa': 4.5, 'b_sh': 4.4, 'b_fa': 4.2, 'p_sh': 4.1, 'p_n': 3.9, 'p1_n': 3.8, 'p1_he': 3.8, 'base_state': 3.7, 'p1_sh': 3.6}
+  50+ 투수 321 · 신인 60 · 신인끼리 τ +0.2734 · 비신인끼리 τ +0.2100
+
+══════════════════════════════════════════════════════════════════════════════════════════
+B. 변형
+══════════════════════════════════════════════════════════════════════════════════════════
+  상황만 (이력 없음)                                    Brier 0.6025  Pitch 69.875  τ -0.0070  Player  49.65  ★Total 63.807
+  + 최근성(h=2) 인코딩                                 Brier 0.6012  Pitch 69.938  τ +0.2216  Player  61.08  ★Total 67.280
+  학습에 2019 포함 (가짜 신인 20%)                        Brier 0.6010  Pitch 69.950  τ +0.2065  Player  60.33  ★Total 67.063
+
+──── pitcher_id 를 LightGBM 범주형으로 직접 투입 (+인코딩) — 과적합 여부
+  + pitcher_id 범주형                               Brier 0.6019  Pitch 69.905  τ +0.1723  Player  58.61  ★Total 66.518
+
+──── 하이퍼파라미터 감도 (num_leaves / lr)
+  leaves=15 lr=0.05 it=927                       Brier 0.6010  Pitch 69.949  τ +0.1996  Player  59.98  ★Total 66.957
+  leaves=31 lr=0.05 it=503                       Brier 0.6010  Pitch 69.951  τ +0.2076  Player  60.38  ★Total 67.080
+  leaves=127 lr=0.05 it=200                      Brier 0.6011  Pitch 69.943  τ +0.2108  Player  60.54  ★Total 67.123

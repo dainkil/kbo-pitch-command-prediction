@@ -1,0 +1,29 @@
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d11.zip 32.5 MB
+model/adj.json
+model/eb_meta.json
+model/eb_tables.npz
+model/lgb_seed0.txt
+model/lgb_seed1.txt
+model/lgb_seed2.txt
+model/lgb_seed3.txt
+model/lgb_seed4.txt
+model/meta.json
+model/tables/batter.csv
+model/tables/pitcher.csv
+requirements.txt
+script.py
+--- [1] 더미 5행:
+saved output/submission.csv (5 rows) in 0.8s · mean probs [0.1923 0.307  0.5006]
+row_id,prob_shadow,prob_heart,prob_failure
+TEST_9be1c0d88648d70b653f,0.18569878261659636,0.3448884494161233,0.4694127679672803
+TEST_cebd221e2d04ffab7d44,0.20012104159210223,0.39206409744867987,0.4078148609592179
+TEST_06a4339e4ac702ac8ac3,0.2063285836478918,0.3079421684840468,0.48572924786806143
+TEST_3e12601d3c477e22aab3,0.17777163715779865,0.25845363618915695,0.5637747266530445
+TEST_aefd595435f96b8d284c,0.1918294814211627,0.23172896507565274,0.5764415535031846
+synthetic test rows: 218836
+--- [2] 218,992행 타이밍 (6 vCPU 모사: taskset 0-5):
+saved output/submission.csv (218,836 rows) in 32.6s · mean probs [0.1952 0.2873 0.5174]
+  elapsed 33.01s · maxRSS 500840KB
+row_id,prob_shadow,prob_heart,prob_failure
+TRAIN_5e4c3ea4e3a4dd87bf8d,0.18569878261659636,0.3448884494161233,0.4694127679672803
+TRAIN_44b6da2b806195ef63cc,0.20360970088500197,0.28518538852143804,0.5112049105935601

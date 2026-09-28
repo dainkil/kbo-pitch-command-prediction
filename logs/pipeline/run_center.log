@@ -1,0 +1,11 @@
+[   35s] s_hat 표 633 투수 · center_k=0.5 · s_tr mean 28.08 sd 3.11
+--- κ=0.5
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6004  Pitch 69.979  τ +0.1427  Player  57.14  ★Total 66.126
+    τ 전체        321명  +0.1427
+[   33s] s_hat 표 633 투수 · center_k=1.0 · s_tr mean 28.08 sd 3.11
+--- κ=1.0
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6004  Pitch 69.982  τ +0.1303  Player  56.52  ★Total 65.942
+    τ 전체        321명  +0.1303
+CENTER_DONE

@@ -1,0 +1,22 @@
+# data (대회 규정상 비공개)
+data/
+*.csv
+!results/*.csv
+# model binaries / submission bundles
+*.zip
+lgb_seed*.txt
+main*.txt
+comp.txt
+*.npz
+*.pkl
+cache_*
+# secrets
+*.pem
+.env
+# misc
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv*/
+output/

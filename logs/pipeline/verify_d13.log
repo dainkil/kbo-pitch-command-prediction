@@ -1,0 +1,4 @@
+script /tmp/script_d9 · model submit_d13/model · test (218836, 29) · 피처 62 · 모델 5 · mode anchor · inject 0 · pre23f drop · adj Y
+전체 예측 33.4s · 평균 [0.1931 0.2873 0.5195]
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS

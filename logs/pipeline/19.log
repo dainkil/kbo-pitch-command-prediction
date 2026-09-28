@@ -1,0 +1,23 @@
+
+══════════════════════════════════════════════════════════════════════════════════════════
+2024 폴드 — 체제 정보 변형
+══════════════════════════════════════════════════════════════════════════════════════════
+  기준 15A (season 없음) (it=329)                    Brier 0.6011  Pitch 69.943  τ +0.2012  Player  60.06  ★Total 66.978
+  + season 열 (it=221)                            Brier 0.6001  Pitch 69.993  τ +0.3210  Player  66.05  ★Total 68.810
+   gain%: {'balls_before': 9.5, 'strikes_before': 9.0, 'p_skill': 5.3, 'p_fa': 4.9, 'season': 4.3, 'li': 4.1, 'b_n': 4.0, 'p_n': 3.9, 'b_he': 3.8, 'b_sh': 3.8}
+  + regime 플래그(≥2023) (it=264)                   Brier 0.6003  Pitch 69.985  τ +0.2888  Player  64.44  ★Total 68.322
+  최근 2시즌(2022–23)만 학습 (it=175)                   Brier 0.6007  Pitch 69.964  τ +0.2473  Player  62.37  ★Total 67.685
+  최근 2시즌 + season 열 (it=131)                     Brier 0.6002  Pitch 69.991  τ +0.3213  Player  66.07  ★Total 68.814
+  + season + 투수×game_type EB (it=278)            Brier 0.6002  Pitch 69.992  τ +0.3000  Player  65.00  ★Total 68.494
+  + season + 투수×gt EB + 최근성 h=2 (it=294)         Brier 0.6001  Pitch 69.993  τ +0.3222  Player  66.11  ★Total 68.828
+   gain%: {'balls_before': 8.2, 'strikes_before': 7.5, 'pgt_fa': 5.5, 'b_n': 4.0, 'b_sh': 3.9, 'li': 3.9, 'b_fa': 3.8, 'b_he': 3.8, 'base_state': 3.4, 'p_skill': 3.1, 'season': 3.0, 'home_win_expectancy': 2.9, 'pgt_sh': 2.8, 'pgt_he': 2.8, 'p1_n': 2.4}
+
+──── 앙상블 (확률 평균)
+  season + season·pgt·h2 평균                      Brier 0.5999  Pitch 70.003  τ +0.3251  Player  66.26  ★Total 68.879
+  3개 평균                                          Brier 0.5999  Pitch 70.007  τ +0.3303  Player  66.52  ★Total 68.960
+
+──── 신인 / 비신인 τ 분해 (P5)
+    신인 60명  τ +0.3209
+    비신인 261명  τ +0.3199
+
+[ 1173s] done

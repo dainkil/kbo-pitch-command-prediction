@@ -1,0 +1,29 @@
+전체 1,474,868 · 라벨 1,221,746
+  ★홀드아웃 2024 · 학습 [np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)] · 평가행 218,836
+  ★대리등급 표: 시즌 [np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023)] · PGR_HIST=0 CTR=1 DECAY=1.0
+대리표 R² 0.2491 · 투수 711 · 행/라벨행 1.218
+  플래툰 편차 (좌우조합) [-1.398  0.212  0.638 -0.247]
+  기용 계수 적합 시즌 [np.int64(2021), np.int64(2022), np.int64(2023)] · balls_before=-1.5972  strikes_before=+0.9181  num_runners_on=-0.7561  run_total_before=-0.8819  outs_before=+0.2340
+  팀 환경 편차 10팀 · 범위 -1.122~+1.392 (리그 27.092)
+★ 최적 트리 97
+  레벨 보정 γ=-0.6 mode=row · 평균차 -2.804 · 가중평균 0.1118
+  플래툰 보정 γ=0.6
+  팀 보정 γ=-0.25 · 적용 99.9%
+  ★경기상태 항 g=0.5 w=1 · 행항 sd 0.647 · 투수평균항 sd 0.356
+  ★기용 보정 g=0.5 · balls_before=-1.5972  strikes_before=+0.9181  num_runners_on=-0.7561  run_total_before=-0.8819  outs_before=+0.2340
+
+[2024 홀드아웃]
+   투수EB(전역prior)=베이스라인설계            Score  66.807 | Pitch 69.7527 | Player  59.934 (τ +0.1987)
+   투수EB(배치셀prior) α=2000·β=0.6      Score  67.548 | Pitch 69.7596 | Player  62.388 (τ +0.2478)
+   LightGBM                         Score  66.616 | Pitch 69.9201 | Player  58.905 (τ +0.1781)
+   L6 anchor (라벨행만)                 Score  67.653 | Pitch 69.9099 | Player  62.388 (τ +0.2478)
+     anchor[mult] · 클립행 0.00%       Score  66.732 | Pitch 69.8345 | Player  59.493 (τ +0.1899)
+     anchor[sf] · 클립행 0.00%         Score  66.766 | Pitch 69.8836 | Player  59.493 (τ +0.1899)
+     anchor[proj] · 클립행 0.00%       Score  66.768 | Pitch 69.8859 | Player  59.493 (τ +0.1899)
+   ★L7 anchor[proj] (A_T=2400 β=0.0) Score  66.768 | Pitch 69.8859 | Player  59.493 (τ +0.1899)
+
+[★ 게이트] 제출 경로(29열) 재현
+   제출 script.py 경로                  Score  66.768 | Pitch 69.8859 | Player  59.493 (τ +0.1899)
+   학습 내부 66.768022 vs 제출 경로 66.768022 · 차이 0.00e+00  ✓ 통과
+  홀드아웃 번들 저장 /home/ubuntu/workspace/산출물/dain/src/l236x/hold24
+  (SKIP_FINAL=1 · 전체 재학습 생략)

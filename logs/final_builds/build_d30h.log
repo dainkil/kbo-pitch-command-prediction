@@ -1,0 +1,6 @@
+대리등급 표 재구성 w=0.5: 투수 792 · 평균 n 1702
+[게이트] 행 독립 최대차 1.388e-16 · 확률합 2.22e-16 · 최소 6.17e-02  ✓
+   d29a (2024 인샘플)                          Score  70.3545 | Pitch  70.1855 | Player  70.7488 (τ +0.4150)
+   d30h                                     Score  70.3368 | Pitch  70.1861 | Player  70.6885 (τ +0.4138)
+  Δ Pitch +0.0005 Player -0.0604 · 투수 mean t 상관 +0.9986 · 순위이동 3.8/321
+  zip → /home/ubuntu/workspace/산출물/dain/out/submit_d30h.zip 40.2MB

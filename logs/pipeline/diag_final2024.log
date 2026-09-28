@@ -1,0 +1,5 @@
+usage: train.py [-h] [--drop DROP] [--lr LR] [--minleaf MINLEAF]
+                [--leaves LEAVES] [--year YEAR] [--upto UPTO] [--out OUT]
+                [--tag TAG]
+                mode [seeds] [rounds]
+train.py: error: unrecognized arguments: --rounds 560

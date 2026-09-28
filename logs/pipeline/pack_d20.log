@@ -1,0 +1,7 @@
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d20.zip 34.0 MB 14 files
+--- [1] 더미 5행:
+saved output/submission.csv (5 rows) in 0.3s · mean probs [0.19   0.307  0.5029]
+synthetic test rows: (cached)
+--- [2] 218,836행 타이밍 (taskset 0-5):
+saved output/submission.csv (218,836 rows) in 36.7s · mean probs [0.1989 0.2873 0.5138]
+  elapsed 37.27s · maxRSS 610740KB

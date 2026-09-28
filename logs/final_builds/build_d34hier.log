@@ -1,0 +1,6 @@
+d34hier[hier]: 셀 16948 · 원 sd 0.8300 → 재스케일 0.42 · 원표(TS) 와 상관 +0.8814 · 평균|Δ| 0.146
+[게이트] 행 독립 최대차 1.110e-16 · 확률합 2.22e-16 · 최소 6.43e-02  ✓
+   TS_P600G10 (2024 인샘플)                    Score  69.3529 | Pitch  70.0405 | Player  67.7484 (τ +0.3550)
+   d34hier                                  Score  69.3498 | Pitch  70.0370 | Player  67.7465 (τ +0.3549)
+  Δ Pitch -0.0035 Player -0.0019 · 투수 mean t 상관 +0.9997 · 순위이동 1.8/321
+  zip → /home/ubuntu/workspace/산출물/dain/out/submit_d34hier.zip 8.0MB

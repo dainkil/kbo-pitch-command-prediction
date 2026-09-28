@@ -1,0 +1,25 @@
+=== [B1] skill prior 배포용 (2020..2024 학습, 표 <2025)
+[   52s] saved → ../out/skill_Cf_2025 · μ(학습행) mean 27.31 sd 1.97
+[   49s] saved → ../out/skill_Af_2025 · μ(학습행) mean 27.34 sd 2.05
+=== [B2] 배포 모델: d9 GBDT(5시드) 재사용 + α1300 + skill → zip + 평가서버 모사 + 행 독립
+[   29s] skill prior C (../out/skill_Cf_2025) w=1.0 → submit_d10/model
+[   29s] final done → submit_d10/model
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d10.zip 32.8 MB
+saved output/submission.csv (5 rows) in 0.2s · mean probs [0.1909 0.307  0.5021]
+saved output/submission.csv (218,836 rows) in 65.7s · mean probs [0.1912 0.2873 0.5215]
+  elapsed 66.10s · maxRSS 696232KB
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+GBDT 바이트 동일 ✓
+d10 = Cf
+[   28s] skill prior A (../out/skill_Af_2025) w=1.0 → submit_d11/model
+[   28s] final done → submit_d11/model
+zip → /home/ubuntu/workspace/산출물/dain/out/submit_d11.zip 32.8 MB
+saved output/submission.csv (5 rows) in 0.2s · mean probs [0.1927 0.307  0.5003]
+saved output/submission.csv (218,836 rows) in 33.0s · mean probs [0.1911 0.2873 0.5216]
+  elapsed 33.43s · maxRSS 696712KB
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+GBDT 바이트 동일 ✓
+d11 = Af
+BUILD_DONE

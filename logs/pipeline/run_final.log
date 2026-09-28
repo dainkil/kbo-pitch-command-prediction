@@ -1,0 +1,28 @@
+=== [0] d4 배포동일 검산 (v3 설계, --upto 2024, script.py 경로)
+[   55s] saved lgb_seed0.txt
+[   55s] final done → submit_val_d4/model
+전체 예측 2.9s · 평균 [0.1821 0.2834 0.5345]
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 0  → PASS (비트 동일)
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.5995  Pitch 70.025  τ +0.3578  Player  67.89  ★Total 69.385
+=== [1] d5 학습: noF GBDT 5시드 (2020–2024) + EB + anchor
+[  216s] saved lgb_seed3.txt
+[  269s] saved lgb_seed4.txt
+[  270s] EB 표 저장 (α=2000.0, 투수 766) · mode=anchor
+[  270s] final done → submit_d5/model
+=== [2] d6: d5 GBDT 재사용 + loc 주입 ε=0.1
+    models = json.load(open(os.path.join(mdir, "meta.json")))["models"]; print(f"{tk()} GBDT 재사용 {models}")
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'models'
+=== [3] 배포동일 검산 (anchor 설계, --upto 2024 → 2024 채점; 기대 ≈ final_eval anchor1.0 2024: Total 67.69 / τ 0.248)
+    T = {"meta": json.load(open(mdir / "meta.json", encoding="utf-8"))}
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'submit_val_d5/model/meta.json'
+    test = pd.read_csv(test_csv, dtype={ID: str}); print(f"test {test.shape} · 피처 {len(meta['features'])} · 모델 {len(meta['models'])} · mode {meta.get('mode','gbdt')} · inject {meta.get('inject_eps',0)}", flush=True)
+                                                                                                                        ~~~~^^^^^^^^^^
+KeyError: 'models'
+=== [4] zip + 평가서버 모사 (더미 5행 · 218,992행 타이밍)
+=== [5] 행 독립 검산 (zip 의 model)
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 1.11e-16  → FAIL
+④ 형식     유한·[0,1]·합=1 → PASS
+FINAL_DONE

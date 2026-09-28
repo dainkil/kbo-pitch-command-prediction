@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/workspace/산출물/dain/src/l236x/build_var.py", line 26, in <module>
+    cmp_all = O.B_CMP["m"].predict(O._cmp_feats(O.prep(dl[B29].reset_index(drop=True))).to_numpy(np.float32)) @ G
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'predict'

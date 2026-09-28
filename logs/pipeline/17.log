@@ -1,0 +1,45 @@
+[    6s] trackman 1,760,612행 (P_ 투수) · row_id 연결 69.4%
+
+══════════════════════════════════════════════════════════════════════════════════════════
+1. 투수 단위 상관 (2024 평가 50+ 투수 · 과거 Trackman 200구+) — Spearman ρ vs 2024 실제 클래스 비율
+══════════════════════════════════════════════════════════════════════════════════════════
+  교집합 투수 260명
+                             pt      S      H      F
+feat                                                
+ref_resid_skill           0.411  0.327  0.376 -0.436
+tm_mix_fastball          -0.288 -0.243 -0.210  0.291
+tm_mix_offspeed           0.266  0.215  0.201 -0.261
+tm_induced_vert_break    -0.193 -0.169 -0.104  0.170
+tm_horz_break             0.182  0.174  0.111 -0.155
+tm_sd_rel_height         -0.134 -0.106 -0.123  0.161
+tm_rel_speed             -0.124 -0.124 -0.054  0.112
+tm_fb_induced_vert_break -0.114 -0.099 -0.055  0.088
+tm_spin_rate             -0.105 -0.110 -0.016  0.073
+tm_zone_speed            -0.095 -0.100 -0.030  0.082
+tm_rel_side               0.090  0.106  0.032 -0.058
+tm_sd_rel_speed           0.083  0.058  0.094 -0.117
+tm_sd_rel_side           -0.073 -0.051 -0.107  0.124
+tm_rel_height            -0.071 -0.069  0.000  0.046
+tm_sd_extension           0.049  0.011  0.121 -0.088
+tm_fb_rel_speed          -0.014 -0.017  0.007  0.013
+tm_fb_spin_rate          -0.013 -0.028  0.075 -0.019
+tm_mix_breaking          -0.007 -0.016  0.023 -0.028
+tm_extension              0.002  0.021 -0.002  0.004
+
+──── 프로필 → 실력 부분상관: EB 실력을 통제한 뒤 남는 상관 (pt 잔차 vs 프로필)
+    tm_sd_rel_side       ρ(잔차) -0.043
+    tm_sd_rel_height     ρ(잔차) -0.105
+    tm_mix_fastball      ρ(잔차) -0.258
+    tm_rel_speed         ρ(잔차) -0.085
+    tm_spin_rate         ρ(잔차) -0.062
+    tm_extension         ρ(잔차) -0.031
+    tm_fb_rel_speed      ρ(잔차) +0.014
+
+══════════════════════════════════════════════════════════════════════════════════════════
+2. LGB 에 투수 Trackman 프로필 추가 (확장창: season<Y 의 Trackman 만) — 2024 폴드
+══════════════════════════════════════════════════════════════════════════════════════════
+  기준 (19 의 +season 모형)                           Brier 0.6001  Pitch 69.993  τ +0.3210  Player  66.05  ★Total 68.810
+  + Trackman 프로필                                 Brier 0.6002  Pitch 69.992  τ +0.3560  Player  67.80  ★Total 69.334
+  gain% (tm_ 만): {'tm_mix_offspeed': 1.9, 'tm_extension': 1.8, 'tm_induced_vert_break': 1.8, 'tm_sd_extension': 1.8, 'tm_sd_rel_side': 1.7, 'tm_mix_fastball': 1.7, 'tm_fb_induced_vert_break': 1.7, 'tm_sd_rel_height': 1.7, 'tm_rel_height': 1.7, 'tm_fb_spin_rate': 1.7, 'tm_horz_break': 1.6, 'tm_sd_rel_speed': 1.6, 'tm_rel_side': 1.6, 'tm_n': 1.6, 'tm_mix_breaking': 1.5, 'tm_spin_rate': 1.5, 'tm_fb_rel_speed': 1.3}
+
+[   49s] done

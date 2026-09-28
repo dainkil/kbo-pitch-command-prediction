@@ -1,0 +1,5 @@
+script /home/ubuntu/workspace/산출물/dain/src/script_env · model submit_val_d18/model · test (218836, 29) · 피처 62 · 모델 1 · mode anchor · inject 0.0 · pre23f soft · adj Y
+전체 예측 8.6s · 평균 [0.1902 0.2859 0.5239]
+① 행 독립  부분집합 최대차 0 · 역순 0 · 단일행 5.55e-17  → FAIL
+④ 형식     유한·[0,1]·합=1 → PASS
+  ② 배포 동일 (script.py 경로 채점)                      Brier 0.6006  Pitch 69.969  τ +0.2800  Player  64.00  ★Total 68.178
